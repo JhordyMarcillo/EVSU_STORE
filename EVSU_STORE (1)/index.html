@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EVSU_STORE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
+  
+        .w3-container-img {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.5);
+            transition: width 3s, height 3s;
+        }
+
+        .w3-container-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.3s ease;
+        }
+
+        .w3-container-img:hover {
+            width: 300px;
+            height: 300px;
+        }
+
+        .w3-container-img:hover img {
+            transform: scale(1.05);
+        }
+	</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+	
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>EVSU_STORE</b></h3>
+  <img style="margin-left: 30px;" src="img/logo.jpeg" width="111" height="103" alt=""/> </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+	  
+    <a href="#" class="w3-bar-item w3-button">Perifericos</a>
+    <a href="#" class="w3-bar-item w3-button">Monitores</a>
+    
+	  
+	  <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Componentes <i class="fa fa-caret-down"></i>
+    </a>
+	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#cases" class="w3-bar-item w3-button">Gabinetes</a>
+      <a href="#almacenamiento" class="w3-bar-item w3-button">Almacenamiento</a>
+      <a href="#ram" class="w3-bar-item w3-button">Ram</a>
+      <a href="#fpoder" class="w3-bar-item w3-button">Fuentes de poder</a>
+	  <a href="#grafica" class="w3-bar-item w3-button">Tarjetas gráficas</a>
+   	<a href="#procesadores" class="w3-bar-item w3-button">Procesadores</a>
+		<a href="#disipadores" class="w3-bar-item w3-button">Disipación</a>
+    </div>
+	  
+	  
+    <a href="#" class="w3-bar-item w3-button">Accesorios</a>
+    <a href="#" class="w3-bar-item w3-button">Impresión</a>
+  </div>
+	
+	
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contactos</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Sugerencias</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Ingreso Clientes</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class=" w3-xlarge">
+    <p class="w3-left">Componentes</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container">
+    <img src="img/logo.png" alt="Jeans" width="92%" height="395" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">&nbsp;</h1>
+      <h1 class="w3-jumbo w3-hide-small">&nbsp;</h1>
+    </div>
+  </div>
+<p>&nbsp;</p>
+<h1 name="cases"  id="cases" style="margin-left: 5%">Cases</h1>
+	<p>&nbsp;</p>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/gabinete.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Case Bitfenix Saber TG Black<br><b>$134.99</b></p>
+      </div>
+	
+		<div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/gabinete2.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Case Asus TUF GT501 RGB Black<br><b>$224.99</b></p>
+      </div>
+	
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/gabinete3.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+			
+        </div>
+        <p>Case Asus TUF GT501 RGB Black<br><b>$224.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+		  <div class="w3-display-container">
+        <img src="img/gabinete4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+		  </div>
+			  <p>Case Asus ROG Strix Z11<br>
+        <b>$120.50</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/gabinete5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Case Speedmind FG-05B Black<br>
+        <b>$120.50</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/gabinete6.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Case Bitfenix Enso White<br><b class="w3-text-red">$140.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/gabinete7.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>		  
+        
+        <p>Case Corsair Crystal 570X RGB – Mirror Black<br><b>$304.99</b></p>
+      </div>
+      <div class="w3-container-img">
+		  
+        <div class="w3-display-container">
+          <img src="img/gabinete8.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+		  <p>Case Cooler Master Master Box K501L<br><b>$109.99</b></p>
+      </div>
+    </div>
+  </div>
+
+
+	<p>&nbsp;</p>
+<h1 name="almacenamiento" id="almacenamiento" style="margin-left: 5%">Almacenamiento</h1>
+	<p>&nbsp;</p>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/almacenamiento.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>SSD Adata SU630 240GB<br><b>$39.99</b></p>
+      </div>
+	
+		<div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/almacenamiento2.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>SSD Crucial BX500 240GB<br><b>$59.99</b></p>
+      </div>
+	
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+			<p>&nbsp;</p>
+          <img src="img/almacenamiento3.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+			
+        </div>
+        <p>SSD Adata SU630 480GB<br><b>$14.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+		  <div class="w3-display-container">
+			  <p>&nbsp;</p>
+        <img src="img/almacenamiento4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+		  </div>
+			  <p>SSD Externo Adata SD700 1TB USB 3.2<br>
+        <b>$178.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/almacenamiento5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>SSD M.2 NVMe Corsair Force MP510 240GB<br>
+        <b>$89.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/almacenamiento6.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>SSD Gigabyte 120GB<br><b class="w3-text-red">$32.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/almacenamiento7.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>		  
+        
+        <p>SSD M.2 NVMe Corsair Force MP510 480GB<br><b>$144.99</b></p>
+      </div>
+      <div class="w3-container-img">
+		  
+        <div class="w3-display-container">
+          <img src="img/almacenamiento8.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+		  <p>SSD Gigabyte 480GB<br><b>$54.99</b></p>
+      </div>
+    </div>
+  </div>
+<p>&nbsp;</p>
+	
+	
+<h1 name="ram" id="ram" style="margin-left: 5%">Ram</h1>
+	<p>&nbsp;</p>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/ram.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>DIMM KINGSTON FURY IMPACT 8GB DDR4-3200MHZ PC4-25600 CL20 ECC 260-PIN<br><b>$24.99</b></p>
+      </div>
+	
+		<div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/ram2.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>DIMM ADATA XPG 8GB DDR4-3200MHZ SPECTRIX D50 RGB CL16 BLANCO<br><b>$34.99</b></p>
+      </div>
+	
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/ram3.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+			
+        </div>
+        <p>DIMM CORSAIR RGB RS 8GB VENGEANCE (1X8GB) DDR4 3200MHZ CL16<br><b>$32.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+		  <div class="w3-display-container">
+        <img src="img/ram4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+		  </div>
+			  <p>DIMM ADATA XPG SPECTRIX 8GB PC-3200 DDR4 XPG ST-60 RGB TUNGSTEN GREYSINGLE COLOR<br>
+        <b>$35.50</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/ram5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>DIMM KINGSTON 8GB 1GX64BIT DDR4-3200MHZ CL16 FURY 288-PIN<br>
+        <b>$36.50</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/ram6.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>DIMM KINGSTON FURY BEAST 16GB 512M X 64BIT DDR4-3600 CL18 288-PINES<br><b class="w3-text-red">$57.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/ram7.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>		  
+        
+        <p>DIMM CORSAIR VENGEANCE RGB RS 16GB 1X16GB DDR4 3600MHZ CL18<br><b>$54.99</b></p>
+      </div>
+      <div class="w3-container-img">
+		  
+        <div class="w3-display-container">
+          <img src="img/ram8.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+		  <p>DIMM CORSAIR VENGEANCE RGB RS 16GB (1X16GB) DDR4 3200MHZ C16<br><b>$51.99</b></p>
+      </div>
+    </div>
+  </div>
+	<p>&nbsp;</p>
+	
+	<h1 name="fpoder" id="fpoder" style="margin-left: 5%">Fuentes de Poder</h1>
+	<p>&nbsp;</p>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/fpoder.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>FUENTE DE PODER CORSAIR CX650 650W CX SERIES ATX 80 PLUS BRONZE VEN. 120MM<br><b>$67.99</b></p>
+      </div>
+	
+		<div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/fpoder2.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>FUENTE DE PODER GIGABYTE P650B 650W ATX<br><b>$84.99</b></p>
+      </div>
+	
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/fpoder3.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+			
+        </div>
+        <p>FUENTE DE PODER CORSAIR CX750 750W CX SERIES ATX 80 PLUS BRONZE VEN. 120MM<br><b>$85.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+		  <div class="w3-display-container">
+        <img src="img/fpoder4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+		  </div>
+			  <p>FUENTE DE PODER CORSAIR RME SERIES RM850E 850W FULLY MODULAR LOW-NOICE ATX 80 PLUS GOLD<br>
+        <b>$123.50</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/fpoder5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>FUENTE DE PODER GIGABYTE 750W 80 PLUS GOLD ATX POWER SUPPLY<br>
+        <b>$135.50</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/fpoder6.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>FUENTE DE PODER GIGABYTE 850W 80 PLUS GOLD ATX POWER SUPPLY<br><b class="w3-text-red">$151.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/fpoder7.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>		  
+        
+        <p>FUENTE DE PODER ASUS TUF GAMING 850W 80 Plus GOLD<br><b>$161.99</b></p>
+      </div>
+      <div class="w3-container-img">
+		  
+        <div class="w3-display-container">
+          <img src="img/fpoder8.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+		  <p>FUENTE DE PODER GIGABYTE 850W 80 PLUS GOLD ATX POWER SUPPLY<br><b>$171.99</b></p>
+      </div>
+    </div>
+  </div>
+	<p>&nbsp;</p>
+	
+	
+		<p>&nbsp;</p>
+<h1 name="grafica" id="grafica" style="margin-left: 5%">Tarjetas Gráficas</h1>
+	<p>&nbsp;</p>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/grafica.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Tarjeta de video Gigabyte GTX 1660 Super 6GB –<br><b>$419.99</b></p>
+      </div>
+	
+		<div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/grafica2.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Tarjeta de video Gigabyte GTX 1650 4GB OC LP –<br><b>$209.99</b></p>
+      </div>
+	
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/grafica3.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+			
+        </div>
+        <p>Tarjeta de video MSI N210 1GB – (912-V809-3634)<br><b>$34.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+		  <div class="w3-display-container">
+			  <p>&nbsp;</p>
+        <img src="img/grafica4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+		  </div>
+			  <p>Tarjeta de video Asus Phoenix GTX 1660 SUPER<br>
+        <b>$564.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/grafica5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Tarjeta de video Asus Dual RTX 2060 6GB OC –<br>
+        <b>$379.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/grafica6.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Tarjeta de video Asus RTX 3070 KO 8GB –<br><b class="w3-text-red">$1334.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/grafica7.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>		  
+        
+        <p>Tarjeta de video Asus Phoenix GTX 1050 Ti 4GB<br><b>$294.99</b></p>
+      </div>
+      <div class="w3-container-img">
+		  
+        <div class="w3-display-container">
+          <img src="img/grafica8.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+		  <p>Tarjeta de video Asus Dual RTX 3070 8GB OC –<br><b>$1199.99</b></p>
+      </div>
+    </div>
+  </div>
+<p>&nbsp;</p>
+	
+		<p>&nbsp;</p>
+<h1 name="procesadores" id="procesadores" style="margin-left: 5%">Procesadores</h1>
+	<p>&nbsp;</p>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/procesador.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Procesador AMD Ryzen 7 5700G – Con Graficos<br><b>$269.99</b></p>
+      </div>
+	
+		<div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/procesador2.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Procesador Intel Core i3-10100F – Sin Graficos<br><b>$119.99</b></p>
+      </div>
+	
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/procesador3.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+			
+        </div>
+        <p>Procesador Intel Core i3-10105F – Sin Graficos<br><b>$119.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+		  <div class="w3-display-container">
+        <img src="img/procesador4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+		  </div>
+			  <p>Procesador AMD Ryzen 7 3800X<br>
+        <b>$278.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/procesador5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Procesador AMD Ryzen 3 3300X<br>
+        <b>$214.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/procesador6.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Procesador AMD Ryzen 5 5600G – Con Graficos<br><b class="w3-text-red">$314.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/procesador7.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>		  
+        
+        <p>Procesador AMD Athlon 3020GE – Con Graficos<br><b>$79.99</b></p>
+      </div>
+      <div class="w3-container-img">
+		  
+        <div class="w3-display-container">
+          <img src="img/procesador8.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+		  <p>Procesador AMD Athlon 3000G<br><b>$124.99</b></p>
+      </div>
+    </div>
+  </div>
+<p>&nbsp;</p>
+	
+		<p>&nbsp;</p>
+<h1 name="disipadores" id="disipadores" style="margin-left: 5%">Disipadores</h1>
+	<p>&nbsp;</p>
+  <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/disipador.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Disipador de calor para SSD M.2 – Doble<br><b>$26.99</b></p>
+      </div>
+	
+		<div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/disipador2.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Liquid Cooler AORUS WATERFORCE X240<br><b>$255.99</b></p>
+      </div>
+	
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/disipador3.jpg" style="width:100%">
+          
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+			
+        </div>
+        <p>Liquid Cooler XPG Levante 240 ARGB<br><b>$214.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+		  <div class="w3-display-container">
+        <img src="img/disipador4.jpg" style="width:100%">
+        <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+		  </div>
+			  <p>Liquid Cooler Asus ROG RYUO 120<br>
+        <b>$289.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/disipador5.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Liquid Cooler Asus ROG Strix LC360 RGB<br>
+        <b>$427.99</b></p>
+      </div>
+		
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/disipador6.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Liquid Cooler Corsair Hydro H45<br><b class="w3-text-red">$73.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container-img">
+        <div class="w3-display-container">
+          <img src="img/disipador7.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>		  
+        
+        <p>Liquid Cooler Corsair Hydro H80i V2<br><b>$134.99</b></p>
+      </div>
+      <div class="w3-container-img">
+		  
+        <div class="w3-display-container">
+          <img src="img/disipador8.jpg" style="width:100%">
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Comprar <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+		  <p>Liquid Cooler Custom Corsair Hydro X iCUE<br><b>$821.99</b></p>
+      </div>
+    </div>
+  </div>
+<p>&nbsp;</p>
+	
+	
+	
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script src="../Modelos_Proye/JS/js.js"></script>
+
+</body>
+</html>
