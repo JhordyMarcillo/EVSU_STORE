@@ -5,9 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
@@ -36,7 +40,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
             transform: scale(1.05);
         }
 	</style>
+	
 </head>
+	
 <body class="w3-content" style="max-width:1200px">
 
 	
@@ -44,32 +50,40 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>EVSU_STORE</b></h3>
-  <img style="margin-left: 30px;" src="img/logo.jpeg" width="111" height="103" alt=""/> </div>
+  <img style="margin-left: 30px;" src="../img/logo.jpeg" width="111" height="103" alt=""/> </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
 	  
-    <a href="html/Perifericos.html" class="w3-bar-item w3-button">Perifericos</a>
+<a href="Perifericos.html" class="w3-button w3-block w3-white w3-left-align">
+      Perifericos <i class="fa fa-caret-down"></i>
+    </a>
 	  
-    <a href="html/Monitores.html" class="w3-bar-item w3-button">Monitores</a>
+	  
+<a href="Monitores.html" class="w3-button w3-block w3-white w3-left-align" >
+      Monitores <i class="fa fa-caret-down"></i>
+    </a>
+
     
 	  
-	  <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+	  <a href="../index.html" class="w3-button w3-block w3-white w3-left-align" >
       Componentes <i class="fa fa-caret-down"></i>
+    </a>	  
+	  
+<a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Accesorios <i class="fa fa-caret-down"></i>
     </a>
 	  <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#cases" class="w3-bar-item w3-button">Gabinetes</a>
-      <a href="#almacenamiento" class="w3-bar-item w3-button">Almacenamiento</a>
-      <a href="#ram" class="w3-bar-item w3-button">Ram</a>
-      <a href="#fpoder" class="w3-bar-item w3-button">Fuentes de poder</a>
-	  <a href="#grafica" class="w3-bar-item w3-button">Tarjetas gráficas</a>
-   	<a href="#procesadores" class="w3-bar-item w3-button">Procesadores</a>
-		<a href="#disipadores" class="w3-bar-item w3-button">Disipación</a>
+      <a href="#cases" class="w3-bar-item w3-button">M</a>
+      <a href="#almacenamiento" class="w3-bar-item w3-button">N</a>
+      <a href="#ram" class="w3-bar-item w3-button">O</a>
+      <a href="#fpoder" class="w3-bar-item w3-button">P</a>
+	  <a href="#grafica" class="w3-bar-item w3-button">Q</a>
+   	  <a href="#procesadores" class="w3-bar-item w3-button">R</a>
+	  <a href="#disipadores" class="w3-bar-item w3-button">L</a>
     </div>
 	  
 	  
-    <a href="html/Accesorios.html" class="w3-bar-item w3-button">Accesorios</a>
 	  
-	  
-    <a href="html/Impresion.html" class="w3-bar-item w3-button">Impresión</a>
+    <a href="Impresion.html" class="w3-bar-item w3-button">Impresión</a>
   </div>
 	
 	
@@ -95,7 +109,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
   
   <!-- Top header -->
   <header class=" w3-xlarge">
-    <p class="w3-left">Componentes</p>
+    <p class="w3-left">Accesorios</p>
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
@@ -104,14 +118,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
 
   <!-- Image header -->
   <div class="w3-display-container">
-    <img src="img/logo.png" alt="Jeans" width="92%" height="395" style="width:100%">
+    <img src="../img/logo.png" alt="Jeans" width="92%" height="395" style="width:100%">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
       <h1 class="w3-jumbo w3-hide-small">&nbsp;</h1>
       <h1 class="w3-jumbo w3-hide-small">&nbsp;</h1>
     </div>
   </div>
 <p>&nbsp;</p>
-<h1 name="cases"  id="cases" style="margin-left: 5%">Cases</h1>
+<h1 name="cases"  id="cases" style="margin-left: 5%">Accesorios</h1>
 	<p>&nbsp;</p>
   <!-- Product grid -->
   <div class="w3-row">
@@ -838,18 +852,18 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
 	
   <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
-    <h1>Deseas Nuevas Promociones</h1>
-    <p>Suscribete y obten descuentos especiales</p>
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
     <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Suscribete</button>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
   </div>
   
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
       <div class="w3-col s4">
-        <h4>Contactos</h4>
-        <p>Alguna Cuestion? Contactanos</p>
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
@@ -860,22 +874,26 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
       </div>
 
       <div class="w3-col s4">
-        <h4>Informacion</h4>
-        <p><a href="#">Sobre Nosotros</a></p>
-        <p><a href="#">Donde encontrarnos</a></p>
-        <p><a href="#">Ayuda</a></p>
-        <p><a href="#">Encuentranos</a></p>
-        <p><a href="#">Metodos de Pago</a></p>
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
       </div>
 
       <div class="w3-col s4 w3-justify">
-        <h4>Tiendas</h4>
-        <p><i class="fa fa-fw fa-map-marker"></i> EVSU STORE</p>
-        <p><i class="fa fa-fw fa-phone"></i> 09999999</p>
-        <p><i class="fa fa-fw fa-envelope"></i> evsustore@gmail.com</p>
-        <h4>Aceptamos</h4>
-        <p><i class="fa fa-fw fa-cc-amex"></i> Efectivo</p>
-        <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta de Credito</p>
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
         <br>
         <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
         <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
@@ -886,6 +904,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
       </div>
     </div>
   </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
   <!-- End page content -->
 </div>
@@ -903,7 +923,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}<style>
   </div>
 </div>
 
-<script src = "JS/js.js"></script>
+<script src = "../JS/js.js"></script>
 
 </body>
 </html>
